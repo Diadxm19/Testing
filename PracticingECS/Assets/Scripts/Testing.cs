@@ -19,7 +19,7 @@ public class Testing : MonoBehaviour
              typeof (RenderMesh),
              typeof (LocalToWorld)
              );
-             NativeArray<Entity> entityArray = new NativeArray<Entity>(1,Allocator.Temp);
+             NativeArray<Entity> entityArray = new NativeArray<Entity>(100,Allocator.Temp);
         entityManager.CreateEntity(entityArchetype, entityArray);
 
         for (int i = 0; i < entityArray.Length; i++){
